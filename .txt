@@ -1,0 +1,7 @@
+
+
+middleware can read all the data that comes through request
+
+they can also modify the datat that comes through request
+
+they can also send response 
