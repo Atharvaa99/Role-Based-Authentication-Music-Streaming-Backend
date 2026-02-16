@@ -383,7 +383,7 @@ This application can be deployed on platforms like:
    - `JWT_SECRET`
 5. Deploy!
 
-**Live API:** `https://role-based-authentication-music.onrender.com/api/auth/login`
+**Live API:** `https://role-based-authentication-music.onrender.com/`
 
 ## 🔐 Environment Variables
 
