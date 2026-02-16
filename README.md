@@ -34,7 +34,7 @@ A robust RESTful API backend for a music streaming platform with role-based acce
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/music-streaming-backend.git
+   git clone https://github.com/Atharvaa99/Role-Based-Authentication-Music-Streaming-Backend.git
    cd music-streaming-backend
    ```
 
@@ -144,7 +144,7 @@ Logout current user
 
 ### **Music Routes** (Artist Only - Requires Authentication)
 
-#### **POST** `/api/music/create`
+#### **POST** `/api/music/upload`
 Upload a new music track
 
 **Headers:**
@@ -171,7 +171,7 @@ Upload a new music track
 
 ---
 
-#### **POST** `/api/music/create-album`
+#### **POST** `/api/music/album`
 Create a new album
 
 **Headers:**
@@ -199,7 +199,7 @@ Create a new album
 
 ### **Music Routes** (User Only - Requires Authentication)
 
-#### **GET** `/api/music/view-music`
+#### **GET** `/api/music/`
 Get all music tracks (limited to 2 for demo)
 
 **Headers:**
@@ -225,7 +225,7 @@ Get all music tracks (limited to 2 for demo)
 
 ---
 
-#### **GET** `/api/music/view-albums`
+#### **GET** `/api/music/albums`
 Get all albums
 
 **Headers:**
@@ -250,7 +250,7 @@ Get all albums
 
 ---
 
-#### **GET** `/api/music/view-album/:id`
+#### **GET** `/api/music/albums/:albumId`
 Get album details by ID
 
 **Headers:**
@@ -341,13 +341,13 @@ You can test the API using tools like:
 
 3. **Upload Music** (as Artist)
    ```bash
-   POST http://localhost:3000/api/music/create
+   POST http://localhost:3000/api/music/upload
    Form-data: music (file), title: "My Song"
    ```
 
 4. **Create Album** (as Artist)
    ```bash
-   POST http://localhost:3000/api/music/create-album
+   POST http://localhost:3000/api/music/album
    Body: { "title": "My Album", "musics": ["music_id_here"] }
    ```
 
@@ -359,7 +359,7 @@ You can test the API using tools like:
 
 6. **View Music** (as User)
    ```bash
-   GET http://localhost:3000/api/music/view-music
+   GET http://localhost:3000/api/music/
    ```
 
 ## 🚀 Deployment
@@ -383,7 +383,7 @@ This application can be deployed on platforms like:
    - `JWT_SECRET`
 5. Deploy!
 
-**Live API:** `https://your-app.onrender.com`
+**Live API:** `https://role-based-authentication-music.onrender.com/api/auth/login`
 
 ## 🔐 Environment Variables
 
